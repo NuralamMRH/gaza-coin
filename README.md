@@ -55,8 +55,8 @@ This project is deployed on GitHub Pages. To deploy your own version:
 1. Fork this repository
 2. Go to your repository settings
 3. Navigate to Pages
-4. Select the main branch as the source
-5. Save the changes
+4. Under "Source", select "GitHub Actions"
+5. The site will be automatically deployed to `https://yourusername.github.io/gaza-coin/`
 
 ## Contributing
 

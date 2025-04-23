@@ -4,8 +4,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "/gaza-coin",
-  assetPrefix: "/gaza-coin/",
+  basePath: process.env.NODE_ENV === "production" ? "/gaza-coin" : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/gaza-coin/" : "",
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
