@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { useWeb3 } from "@/lib/web3/Web3Context";
 import { Navbar } from "@/components/Navbar";
-import Image from "next/image";
 
 const PAYMENT_METHODS = [
   {

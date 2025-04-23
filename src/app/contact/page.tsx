@@ -57,8 +57,8 @@ export default function Contact() {
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Contact Us
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-400">
-            Have questions? We'd love to hear from you.
+          <p className="text-gray-600 dark:text-gray-300">
+            Have questions about Gaza Coin? We&apos;d love to hear from you.
           </p>
         </div>
 
@@ -138,7 +138,8 @@ export default function Contact() {
 
             {submitStatus === "success" && (
               <div className="p-4 bg-green-50 dark:bg-green-900/20 text-green-800 dark:text-green-400 rounded-lg">
-                Message sent successfully! We'll get back to you soon.
+                Message sent successfully! We&apos;ll get back to you as soon as
+                possible.
               </div>
             )}
 

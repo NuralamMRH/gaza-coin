@@ -2,10 +2,17 @@ import { ExternalProvider } from "@ethersproject/providers";
 
 declare global {
   interface Window {
-    ethereum?: ExternalProvider & {
-      on: (event: string, callback: (...args: any[]) => void) => void;
-      removeAllListeners: () => void;
-      request: (args: { method: string; params?: any[] }) => Promise<any>;
+    ethereum?: {
+      isMetaMask?: boolean;
+      request: (args: {
+        method: string;
+        params?: unknown[];
+      }) => Promise<unknown>;
+      on: (event: string, callback: (accounts: string[]) => void) => void;
+      removeListener: (
+        event: string,
+        callback: (accounts: string[]) => void
+      ) => void;
     };
   }
 }
